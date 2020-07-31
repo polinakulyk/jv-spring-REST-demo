@@ -1,7 +1,7 @@
-package com.example.restdemo;
+package com.example.restdemo.exception;
 
 public class EmployeeNotFoundException extends RuntimeException {
-    EmployeeNotFoundException(Long id) {
+    public EmployeeNotFoundException(Long id) {
         super("Could not find employee " + id + ". \n");
     }
 }
